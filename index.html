@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAVEY Home</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-custom bg-dark">
+            <a class="navbar-brand" href="#">PAVEY Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto h5">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tutorial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!--Navigation bar-->
+        <div id="nav-placeholder"></div>
+
+        <script>
+            $(function () {
+                $("#nav-placeholder").load("nav.html");
+            });
+        </script>
+        <!--end of Navigation bar-->
+
+        <div class="login-form float-right">
+            <form action="/examples/actions/confirmation.php" method="post">
+                <h2 class="text-center">Log in</h2>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Email" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" required="required">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                </div>
+                <div class="clearfix">
+                    <label class="float-left form-check-label"><input type="checkbox"> Remember me</label>
+                    <a href="#" class="float-right">Forgot Password?</a>
+                </div>
+            </form>
+            <p class="text-center"><a href="#">Create an Account</a></p>
+        </div>
+
+        <div class="login-form text-center">
+            <h2>Welcome to Pavey!</h2>
+            <p>
+                PAVEY is an easy-to-use pavement design tool to assist state and local engineers, consultants, and
+                students in making informed pavement structural decisions using the AASHTO 93/98 design procedure for
+                flexible and rigid pavements.
+            </p>
+        </div>
+
+
+        <div>
+            <!-- <img src="pavement.jpg" class="img-fluid" alt="Responsive image"> -->
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
